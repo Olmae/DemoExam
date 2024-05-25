@@ -1,0 +1,33 @@
+﻿<Page x:Class="DemoEx18032024.Modul1.EditReq"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DemoEx18032024.Modul1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EditReq">
+
+    <Grid  Background="White">
+        <Label Content="Обработка заявки" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="ID заявки" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="CBListReq" HorizontalAlignment="Left" Margin="177,56,0,0" VerticalAlignment="Top" Width="206" SelectionChanged="Changed"/>
+        <Label Content="Описание неисправности" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Вид ремонта" HorizontalAlignment="Left" Margin="311,83,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="CBRemont" HorizontalAlignment="Left" Margin="314,119,0,0" VerticalAlignment="Top" Width="194"/>
+        <Label Content="Исполнитель" HorizontalAlignment="Left" Margin="311,154,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="CBWork" HorizontalAlignment="Left" Margin="314,190,0,0" VerticalAlignment="Top" Width="194"/>
+        <Button Width="90" Height="30" Content="Сохранить" HorizontalAlignment="Left" Margin="314,225,0,0" VerticalAlignment="Top" Click="SaveBT"/>
+        <Button Width="90" Height="30" Content="Отменить" HorizontalAlignment="Left" Margin="462,225,0,0" VerticalAlignment="Top" Click="Clear"/>
+        <Button Width="90" Height="30" Content="Назад" HorizontalAlignment="Left" Margin="608,225,0,0" VerticalAlignment="Top" Click="Back"/>
+        <Label Content="Описание неисправности" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="TextBlockInfo" HorizontalAlignment="Left" Margin="20,113,0,0" TextWrapping="Wrap" Text="Описание неисправности текст" VerticalAlignment="Top" Height="144" Width="286"/>
+        <Label Content="Заказ выполнен?" HorizontalAlignment="Left" Margin="316,279,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button Width="90" Height="30" Content="Выполнен" HorizontalAlignment="Left" Margin="489,281,0,0" VerticalAlignment="Top" Click="BTDone"/>
+        <Label Content="Статус заказа" HorizontalAlignment="Left" Margin="10,348,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.486,0.505" Width="310"/>
+        <RadioButton x:Name="RBWaiting" Content="В ожидании" HorizontalAlignment="Left" Margin="47,402,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RBWork" Content="В работе" HorizontalAlignment="Left" Margin="214,405,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RBNotDone" Content="Не выполнено" HorizontalAlignment="Left" Margin="371,405,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RBDone" Content="Выполнено" HorizontalAlignment="Left" Margin="519,408,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
